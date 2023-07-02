@@ -1,0 +1,274 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Abril Fatface', cursive;
+    font-family: 'Ysabeau Office', sans-serif;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width: 100%;
+    min-height: 100%;
+    padding: 50px;
+    background-color: #655C4A;
+}
+
+#main nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 7%;
+    font-size: 0.85rem;
+    /* background-color: aqua; */
+}
+
+#main nav a{
+    color: white;
+    text-decoration: none;
+}
+
+#main nav #nright a{
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+#hero{
+    display: flex;
+    width: 100%;
+    height: 85vh;
+    margin-top: 30px;
+    /* background-color: bisque; */
+}
+
+#hero #hleft{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 100px;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+    /* background-color: blueviolet; */
+}
+
+#chlft{
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    /* background-color: rgba(127, 255, 212, 0.116); */
+}
+
+#chlft h5{
+    color: white;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+#chlft h5 #line{
+    vertical-align: middle;
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+    margin: 0px 10px;
+    background-color: white;
+}
+
+#chlft #tlft{
+    width: 100%;
+    height: 300px;
+    margin-top: 20px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+#tlft #ltxt{
+    width: 18%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: left;
+}
+#ltxt h5{
+    display: inline-block;
+    text-align: right;
+}
+
+#tlft #rtxt{
+    width: 78%;
+    height: 100%;
+    /* background-color: rgb(8, 65, 65); */
+}
+
+#rtxt h1{
+    font-size: 7rem;
+    font-weight: 200;
+    line-height: 100px;
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#rtxt #bicon{
+    position: absolute;
+    display: flex;
+    margin-top: 30px;
+    right: 20%;
+}
+
+#bicon i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    height: 70px;
+    width: 70px;
+    margin-left: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    color: white;
+}
+
+#hero #hright{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    /* background-color: coral; */
+}
+
+#hright #imgcntnr{
+    width: 60%;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1601762603339-fd61e28b698a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#imgcntnr #imgoc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: #8996A6;
+    top: 50%;
+    transform: translate(50%, -50%);
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+}
+
+#hright #rlinks{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translate(0%, -50%)
+}
+
+#rlinks a{
+    text-decoration: none;
+    font-size: 0.8rem;
+    margin-top: 15px;
+    color: white;
+
+}
+
+#main #bottom{
+    width: 100%;
+    height: 8vh;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+
+}
+
+#bottom a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.85rem;
+}
+.copyright h5{
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* responsive part */
+
+@media (max-width: 500px){
+    #main{
+        padding: 25px 30px;
+    }
+    #nright{
+        display: flex;
+    }
+    #nleft , #nright {
+        font-size: 12px;
+    }
+    #hero{
+        flex-direction: column;
+
+    }
+    #hero #hleft{
+        min-height: 20vh;
+        width: 100%;
+        padding-left: 0px;
+        align-items: initial;
+    }
+    #hero #chlft{
+        position: static;
+        height: initial;
+        min-height: 30vh;
+    }
+    #chlft #tlft{
+        flex-direction: column;
+        height: initial;
+    }
+    #tlft #ltxt{
+        min-height: initial;
+        width: 100%;
+        margin-top: 0px;
+    }
+    #tlft #rtxt{
+        margin-top: 20px;
+    }
+    #rtxt h1{
+        font-size: 4.3rem;
+        line-height: 4rem;
+    }
+    #rtxt #bicon{
+        position: static;
+    }
+    #bicon i{
+        width: 50px;
+        height: 50px;
+        margin-top: 20px;
+        margin-left: 5px;
+        margin-right: 20px;
+    }
+    #hero #hright{
+        width: 100%;
+        min-height: initial;
+        height: 80vh;
+
+    }
+    #hright #imgcntnr{
+        width: 80%;
+        min-height: inherit;
+    }
+    #bottom a{
+        font-size: 12px;
+    }
+}
